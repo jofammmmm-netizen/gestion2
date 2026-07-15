@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-0e@*gkrr2%3mp%fek6@e$)gq!pzq%g@sz^i^lss4m0hu=-%ds8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://gestion2.up.railway.app']
+CSRF_TRUSTED_ORIGINS = [
+    "https://gestion2.up.railway.app",
+]
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
